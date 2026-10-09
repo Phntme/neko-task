@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-bricolage: "Bricolage Grotesque", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+
+  /* custom color */
+  /* --- light --- */
+  --color-brand-ground-light: #f5f6fa;
+  --color-brand-card-light: #ffffff;
+  --color-brand-ink-light: #12141c;
+  --color-brand-violet-light: #5b3fd9;
+  --color-brand-coin-light: #f5b83d;
+  --color-brand-xp-light: #0f8f7a;
+  --color-brand-hp-light: #d93c4f;
+
+  /* --- dark --- */
+  --color-brand-ground-dark: #0e1016;
+  --color-brand-surface-dark: #171a23;
+  --color-brand-raised-dark: #1f2330;
+  --color-brand-text-dark: #f2f3f8;
+  --color-brand-violet-dark: #a99dff;
+  --color-brand-coin-dark: #f2c25b;
+  --color-brand-hp-dark: #ff6b7a;
+}
