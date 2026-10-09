@@ -20,9 +20,9 @@
     />
   </head>
   <body class="font-jakarta">
-    <div class="w-full h-screen bg-brand-ground-light pt-10 px-5">
+    <div class="w-full h-screen bg-brand-ground-light py-10 px-5">
       <!-- main menu start -->
-      <div class="main-menu show">
+      <div class="main-menu show w-full h-full flex flex-col">
         <!-- level info and theme toggle -->
         <div class="topbar flex justify-between items-center">
           <p class="uppercase font-jakarta font-bold">level <span>1</span></p>
@@ -49,7 +49,30 @@
           </p>
         </div>
         <!-- player stat and btn -->
-        <div class="action"></div>
+        <div class="action mt-auto">
+          <!-- player stat -->
+          <div
+            class="grid grid-cols-3 *:p-4 *:flex *:items-center *:justify-center rounded-3xl *:border-r-2 *:border-brand-ink-light/35 border-2 border-brand-ink-light/35 overflow-hidden"
+          >
+            <div class="bg-brand-card-light flex flex-col">
+              <span class="font-bricolage font-bold text-xl">80</span>
+              <p class="text-xs font-bold text-brand-ink-light/50">HP</p>
+            </div>
+            <div class="bg-brand-card-light flex flex-col">
+              <span class="font-bricolage font-bold text-xl">7</span>
+              <p class="text-xs font-bold text-brand-ink-light/50 capitalize">
+                day streak
+              </p>
+            </div>
+            <div class="bg-brand-card-light flex flex-col border-0!">
+              <span class="font-bricolage font-bold text-xl">+100</span>
+              <p class="text-xs font-bold text-brand-ink-light/50 capitalize">
+                XP available
+              </p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
       </div>
     </div>
   </body>
