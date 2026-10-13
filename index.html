@@ -18,11 +18,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode"
     />
+    <!-- script js -->
+    <script type="module" src="script/main.js"></script>
   </head>
   <body class="font-jakarta">
-    <div class="w-full h-screen bg-brand-ground-light py-10 px-5">
+    <!-- main wrapper -->
+    <div class="w-full h-screen bg-brand-ground-light py-10 px-5 active">
       <!-- main menu start -->
-      <div class="main-menu show w-full h-full flex flex-col">
+      <div class="main-menu show w-full h-full flex flex-col page">
         <!-- level info and theme toggle -->
         <div class="topbar flex justify-between items-center">
           <p class="uppercase font-jakarta font-bold">level <span>1</span></p>
@@ -74,6 +77,7 @@
           <!-- enter btn -->
           <div
             class="login w-full bg-brand-ink-light rounded-full py-2 font-bold text-brand-card-light text-center capitalize hover:brightness-75 transition-all cursor-pointer"
+            id="enter-btn"
           >
             enter NekoTask
           </div>
@@ -84,6 +88,15 @@
           >
         </div>
       </div>
+      <!-- main menu end-->
+      <!-- feature wrapper -->
+      <div class="flex w-full h-full bg-red-400 *:p-4 *:py-5">
+        <!-- home start -->
+        <div class="w-full h-full bg-sky-700">hello</div>
+        <!-- home end -->
+      </div>
+      <!-- feature wrapper end -->
     </div>
+    <!-- main wrapper end -->
   </body>
 </html>
