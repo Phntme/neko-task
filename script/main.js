@@ -1,4 +1,4 @@
-import { element } from "./element.js";
+import { element } from "./element.mjs";
 import { reloadPage, switchPage } from "./page.js";
 
 element.enterBtn.addEventListener("click", () => {

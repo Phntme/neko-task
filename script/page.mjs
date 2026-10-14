@@ -1,4 +1,4 @@
-import { element } from "./element.js";
+import { element } from "./element.mjs";
 
 // function buat pindah page
 function switchPage(target) {
@@ -6,9 +6,8 @@ function switchPage(target) {
     p.classList.add("hidden");
   });
 
-  console.log(target);
   const page = document.getElementById(target);
   page.classList.remove("hidden");
 }
 
-export { reloadPage, switchPage };
+export { switchPage };
