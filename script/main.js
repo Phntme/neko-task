@@ -1,5 +1,7 @@
 import { element } from "./element.mjs";
-import { reloadPage, switchPage } from "./page.js";
+import { switchPage } from "./page.mjs";
+
+switchPage(element.loginMenu.dataset.target);
 
 element.enterBtn.addEventListener("click", () => {
   switchPage(element.enterBtn.dataset.target);

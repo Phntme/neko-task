@@ -6,6 +6,8 @@ function switchPage(target) {
     p.classList.add("hidden");
   });
 
+  console.log(target);
+
   const page = document.getElementById(target);
   page.classList.remove("hidden");
 }
