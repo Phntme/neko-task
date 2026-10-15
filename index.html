@@ -95,15 +95,52 @@
       </div>
       <!-- main menu end-->
       <!-- feature wrapper -->
-      <div
-        class="page flex w-full h-full bg-red-400 *:p-4 *:py-5"
-        id="feature-wrapper"
-      >
+      <div class="page flex w-full h-full" id="feature-wrapper">
         <!-- home start -->
-        <div class="w-full h-full bg-sky-700" id="home-page">
+        <div class="w-full h-full border-sky-500 border-2" id="home-page">
+          <!-- homepage header level info -->
           <header>
-            <h2>LV <span>1</span></h2>
+            <h2 class="font-bricolage font-extrabold text-2xl">
+              LV <span>777</span>
+            </h2>
           </header>
+          <!-- homepage header level info end -->
+          <!-- homepage progress bar stats -->
+          <div class="progress-bar__wrapper">
+            <div
+              class="xp-progress__bar relative flex items-center justify-center"
+            >
+              <!-- svg wrapper -->
+              <svg
+                viewBox="0 0 100 100"
+                class="w-32 h-32 bg-slate-800 -rotate-90"
+              >
+                <!-- base lingkaran -->
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  stroke="gray"
+                  stroke-width="8"
+                  fill="transparent"
+                />
+                <!-- progressive bar-->
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  stroke="blue"
+                  stroke-width="8"
+                  fill="transparent"
+                  stroke-dasharray="251"
+                  stroke-dashoffset="251"
+                  id="xp-bar"
+                />
+              </svg>
+            </div>
+            <div class="health-bar"></div>
+          </div>
+          <!-- homepage progress bar stats end -->
         </div>
         <!-- home end -->
       </div>

@@ -1,7 +1,8 @@
 import { element } from "./element.mjs";
 import { switchPage } from "./page.mjs";
 
-switchPage(element.loginMenu.dataset.target);
+// only homepage branch, this code will automatically open homepage menu
+switchPage(element.enterBtn.dataset.target);
 
 element.enterBtn.addEventListener("click", () => {
   switchPage(element.enterBtn.dataset.target);
