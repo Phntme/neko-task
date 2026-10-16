@@ -97,30 +97,32 @@
       <!-- feature wrapper -->
       <div class="page flex w-full h-full" id="feature-wrapper">
         <!-- home start -->
-        <div class="w-full h-full border-sky-500 border-2" id="home-page">
+        <div
+          class="w-full h-full p-5 py-7 bg-slate-200/80 border-slate-400/80 border-2 rounded-4xl"
+          id="home-page"
+        >
           <!-- homepage header level info -->
           <header>
-            <h2 class="font-bricolage font-extrabold text-2xl">
-              LV <span>777</span>
+            <h2
+              class="font-bricolage font-extrabold text-4xl text-brand-ink-light"
+            >
+              Level <span>777</span>
             </h2>
           </header>
           <!-- homepage header level info end -->
           <!-- homepage progress bar stats -->
-          <div class="progress-bar__wrapper">
+          <div class="progress-bar__wrapper w-full">
             <div
-              class="xp-progress__bar relative flex items-center justify-center"
+              class="xp-progress__bar relative flex items-center justify-center py-5"
             >
               <!-- svg wrapper -->
-              <svg
-                viewBox="0 0 100 100"
-                class="w-32 h-32 bg-slate-800 -rotate-90"
-              >
+              <svg viewBox="0 0 100 100" class="w-32 h-32 -rotate-90">
                 <!-- base lingkaran -->
                 <circle
                   cx="50"
                   cy="50"
                   r="40"
-                  stroke="gray"
+                  stroke="#cbd5e1bf"
                   stroke-width="8"
                   fill="transparent"
                 />
@@ -129,7 +131,7 @@
                   cx="50"
                   cy="50"
                   r="40"
-                  stroke="blue"
+                  stroke="#5b3fd9"
                   stroke-width="8"
                   fill="transparent"
                   stroke-dasharray="251"
@@ -138,7 +140,24 @@
                 />
               </svg>
             </div>
-            <div class="health-bar"></div>
+            <!-- health bar -->
+            <div class="health-wrapper grid grid-cols-1 gap-2">
+              <div
+                class="hp-header flex justify-between font-bold font-bricolage text-brand-ink-light"
+              >
+                <header class="">HP</header>
+                <span class=""><span>80</span> / 100</span>
+              </div>
+              <div
+                class="health-bar bg-slate-300/75 rounded-full w-full relative h-2.5 overflow-x-hidden"
+              >
+                <div
+                  class="health-progress w-[80%] h-full bg-brand-hp-light"
+                ></div>
+              </div>
+            </div>
+
+            <!-- health bar end -->
           </div>
           <!-- homepage progress bar stats end -->
         </div>
