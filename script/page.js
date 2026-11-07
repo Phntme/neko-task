@@ -9,6 +9,7 @@ function switchPage(target) {
   console.log(target);
   const page = document.getElementById(target);
   page.classList.remove("hidden");
+  page.classList.add("flex");
 }
 
-export { reloadPage, switchPage };
+export { switchPage };
