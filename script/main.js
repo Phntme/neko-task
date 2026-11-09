@@ -4,5 +4,6 @@ import { switchPage } from "./page.mjs";
 switchPage(element.loginMenu.dataset.target);
 
 element.enterBtn.addEventListener("click", () => {
+  console.log("hello world");
   switchPage(element.enterBtn.dataset.target);
 });
