@@ -10,6 +10,7 @@ function switchPage(target) {
 
   const page = document.getElementById(target);
   page.classList.remove("hidden");
+  page.classList.add("flex");
 }
 
 export { switchPage };
