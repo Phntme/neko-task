@@ -10,6 +10,5 @@ element.enterBtn.addEventListener("click", () => {
   switchPage(element.enterBtn.dataset.target);
 });
 
-const xpBar = element.expBar;
-console.log(xpBar);
-xpBar.style.strokeDashoffset = offset;
+// circular exp bar
+element.expBar.style.strokeDashoffset = offset;
