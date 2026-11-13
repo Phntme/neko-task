@@ -24,3 +24,7 @@
   --color-brand-coin-dark: #f2c25b;
   --color-brand-hp-dark: #ff6b7a;
 }
+
+@utility homepage-badge {
+  @apply px-2.5 py-0.5 rounded-full flex items-center justify-center capitalize text-sm font-semibold text-brand-ink-light bg-brand-card-light border-brand-ink-light/35 border-[1.75px];
+}
